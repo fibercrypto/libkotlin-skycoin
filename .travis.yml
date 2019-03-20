@@ -1,0 +1,11 @@
+language: java
+jdk:
+- oraclejdk8
+
+sudo: true
+
+before_install:
+  - sh ./travis/gradle_install.sh
+  - sh ./travis/kotlin_install.sh
+
+script:
