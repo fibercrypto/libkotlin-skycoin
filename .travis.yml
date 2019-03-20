@@ -5,7 +5,7 @@ jdk:
 sudo: true
 
 before_install:
-  - sh ./travis/gradle_install.sh
-  - sh ./travis/kotlin_install.sh
+  - sudo sh ./travis/gradle_install.sh
+  - sudo sh ./travis/kotlin_install.sh
 
-script:
+script: ./travis/skyapi.sh
