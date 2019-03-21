@@ -7,4 +7,5 @@ touch /etc/profile.d/gradle.sh
 echo "export GRADLE_HOME=/opt/gradle/gradle-5.0" >> /etc/profile.d/gradle.sh
 echo "export PATH=${GRADLE_HOME}/bin:${PATH}" >> /etc/profile.d/gradle.sh
 sudo chmod +x /etc/profile.d/gradle.sh
-sudo source /etc/profile.d/gradle.sh
+sudo -s
+source /etc/profile.d/gradle.sh
