@@ -5,7 +5,8 @@ jdk:
 sudo: true
 
 before_install:
-  - (cd $TRAVIS_BUILD_DIR/lib/skyapi && chmod +x gradlew
-  - (cd $TRAVIS_BUILD_DIR/lib/skyapi && chmod +x gradlew/wrapper/gradle-wrapper.jar
+  - (cd $TRAVIS_BUILD_DIR/lib/skyapi && gradle build)
+  - (cd $TRAVIS_BUILD_DIR/lib/skyapi && ./gradlew check assemble)
 
-script: (cd $TRAVIS_BUILD_DIR/lib/skyapi && ./gradlew test build)
+-script: (cd $TRAVIS_BUILD_DIR/lib/skyapi && ./gradlew test build)
+
