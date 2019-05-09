@@ -1187,7 +1187,7 @@ class DefaultApi(basePath: kotlin.String = "http://127.0.0.1:6420") : ApiClient(
     fun walletCreate(seed: kotlin.String, label: kotlin.String, scan: kotlin.Int, encrypt: kotlin.Boolean, password: kotlin.String) : kotlin.Any {
         val localVariableBody: kotlin.Any? = null
         val localVariableQuery: MultiValueMap = mapOf()
-        val localVariableHeaders: kotlin.collections.Map<kotlin.String,kotlin.Any> = mapOf("seed" to seed, "label" to label, "scan" to scan, "encrypt" to encrypt, "password" to password)
+        val localVariableHeaders: kotlin.collections.Map<kotlin.String,kotlin.String> = mapOf("seed" to seed, "label" to label, "scan" to scan, "encrypt" to encrypt, "password" to password)
         val localVariableConfig = RequestConfig(
             RequestMethod.POST,
             "/api/v1/wallet/create",
