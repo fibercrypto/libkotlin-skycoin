@@ -5,7 +5,7 @@ jdk:
 sudo: true
 
 before_install:
-  - (cd $TRAVIS_BUILD_DIR/lib/skyapi && gradle build --stacktrace)
+  - (cd $TRAVIS_BUILD_DIR/lib/skyapi && gradle build)
   - (cd $TRAVIS_BUILD_DIR/lib/skyapi && gradle test)
   # - (cd $TRAVIS_BUILD_DIR/lib/skyapi && ./gradlew check assemble)
 
